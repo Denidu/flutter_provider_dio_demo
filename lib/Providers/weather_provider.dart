@@ -8,6 +8,7 @@ class WeatherProvider extends ChangeNotifier {
   Weather? get weather => _weather;
 
   final Dio _dio = Dio();
+  
 
   Future<void> fetchWeatherForCity(String cityName) async {
     try {
